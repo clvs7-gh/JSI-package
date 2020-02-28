@@ -1,0 +1,26 @@
+{
+  "name": "jsi-package",
+  "version": "1.0.0",
+  "description": "A custom package of JS-Interpreter",
+  "main": "./dist/jsi.bundle.js",
+  "files": [
+    "README.md",
+    "package.json",
+    "test.js",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tailengine/JSI-package.git"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --rev `git ls-files -s jsi | cut -d ' ' -f 2`",
+    "test": "node ./test.js"
+  },
+  "author": "clvs7",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

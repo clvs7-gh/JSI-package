@@ -16,4 +16,9 @@ const initFunc = (i, s) => {
   i.setProperty(s, 'sleep', i.createAsyncFunction((timeMs, callback) => setTimeout(callback, timeMs)));
 };
 const myInterpreter = new Interpreter(myCode, initFunc);
-myInterpreter.run();
+const runner = () => {
+  if (myInterpreter.run()) {
+    setTimeout(runner, 100);
+  }
+};
+runner();

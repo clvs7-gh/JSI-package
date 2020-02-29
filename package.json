@@ -1,6 +1,6 @@
 {
   "name": "jsi-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom package of JS-Interpreter",
   "main": "./dist/jsi.bundle.js",
   "files": [

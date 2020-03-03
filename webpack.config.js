@@ -21,7 +21,7 @@ module.exports = (_, argv) => {
             // Add acorn license text
             new webpack.BannerPlugin('// Acorn: Copyright 2012 Marijn Haverbeke, MIT License'),
             // Add JS-Interpreter license text
-            new webpack.BannerPlugin(`// JS-Interpreter rev ${rev}: Copyright 2013 Google LLC / Neil Fraser, Apache-2.0 License`),
+            new webpack.BannerPlugin(`// JS-Interpreter rev ${rev}: Copyright 2013 Google LLC / Neil Fraser, Apache License 2.0`),
         ]
     };
 };
